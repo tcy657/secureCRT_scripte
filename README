@@ -1,0 +1,9 @@
+rem 2th, dhcp
+rem netsh interface ip set address "本地连接" dhcp
+rem netsh interface ip set dns "本地连接" dhcp
+
+rem 3th, manual
+netsh -c interface ip set address "本地连接" static 10.190.19.201 255.255.255.0 10.190.19.1
+netsh interface ip set dns "本地连接" static 10.19.8.10
+netsh interface ip set dns "本地连接" static 10.19.8.15
+pause
